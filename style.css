@@ -1,0 +1,66 @@
+footer{
+    text-align: center;
+}
+h1{
+  text-align: center;
+}
+
+.article{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.admin-table{
+    width:100%;
+}
+
+
+
+.all{    
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-row{
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+
+.form-row > lable{
+    padding: .5em 1em .5em 0;
+}
+
+
+.form-row > input {
+    flex: 1;
+}
+
+
+.form-row > input,
+.form-row > button{
+    padding: .5em;
+}
+
+
+.form-row > button{
+    background: gray;
+    color: white;
+    border: 0;
+}
+
+
+.form-content{
+    resize: horizontal;
+    width: 1500px;
+    height: 300px;
+}
+.text{
+    box-sizing: content-box;
+    width: 100px;
+}
