@@ -64,3 +64,14 @@ h1{
     box-sizing: content-box;
     width: 100px;
 }
+
+.navbar navbar-expand-lg {
+    color: rgb(126, 243, 16);
+}
+.col-sm-4{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.tr{
+    margin-right: 50px;
+}

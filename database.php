@@ -1,34 +1,12 @@
 <?php
-define('MYSQL_SERVER', 'localhost');
-define('MYSQL_USER', 'root');
-define('MYSQL_PASSWORD', '');
-define('MYSQL_DB', 'blog');
+define ('MYSQL_SERVER', 'mysql:dbname=blog;host=127.0.0.1', false);
+define('MYSQL_USER', 'root', false);
+define('MYSQL_PASSWORD', '', false);
 
-function db_connect()
-{
-  $link = mysqli_connect(MYSQL_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB)
-  or die("Error: ".mysqli_error($link));
-  if (!mysqli_set_charset($link, "utf8")) {
-    print("Error: ".mysqli_error($link));
-    echo "<br> из базы";
-  }
-  return $link;
+$link = "";
+function db_connected($link){
+    $link = new PDO(MYSQL_SERVER, MYSQL_USER, MYSQL_PASSWORD) or 
+    die('Error:'. print_r($link->errorInfo()));    
+    return $link;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  ?>

@@ -1,4 +1,5 @@
 <?php
+/*
 require_once("../database.php");
 require_once("../models/articles.php");
 
@@ -6,19 +7,24 @@ $link = db_connect();
 
 // добавить статью!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-if (isset($_GET['action'])){
+/**if (isset($_GET['action'])){
 		$action = $_GET['action'];
-	}
+	}  
+
+	
 else{$action = "";}
 
-if ($action == "add") {
+**/
+/*
+if ($_GET['action'] == "add") {
+	include("../views/article_admin.php");
 	if (!empty($_POST)) {
 			articles_new($link, $_POST['title'], $_POST['date'], $_POST['content']);
 			
 		}
 	//header("Location: index.php");
 		
-	include("../views/article_admin.php");
+	
 
 }		
 
