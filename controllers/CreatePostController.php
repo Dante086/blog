@@ -11,5 +11,5 @@ if(!empty($_POST)){
     create_post($connect_db, $title, $date, $content);
 }
 
-include('../controllers/AdminPanelController.php');
+include('../views/article_admin.php');
 

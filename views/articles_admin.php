@@ -34,7 +34,7 @@
 
         <div class="container">
             <h1>Панель администратора</h1>
-            <a href="ArticleAdminController.php">добавить статью</a>
+            <a href="CreatePostController.php">добавить статью</a>
         
             <div>
                 <table class="admin-table">
