@@ -35,21 +35,21 @@
 	<div class="container">
 		<h3>редактирование или добавление статей</h3>
 	</div>
-	<div >
-		<form method="post" action="../controllers/CreatePostController.php">   <!--?action=<?=$_GET['add']?>--> 
-			<ul>
+	<div class="form-post" >
+		<form method="post" action="../controllers/CreatePostController.php">  
+			<ul class="form-colon">
 				<li class="col-sm-4">
 					<label>	название </label>   	
-					<input type="text" name="title" >		
-				</li>
+					<input type="text" name="title" size="45" >		
+				</li><br>
 				<li class="col-sm-4">
 					<label>	дата </label>
-					<input type="date" name="date" >
+					<input type="date" name="date" size="40">
 				</li>
 				<li class="col-sm-4">
 					<label>	содержимоe </label>
-					<div >
-					<textarea name="content"  required></textarea>
+					<div class="form-content" >
+					<textarea cols="120" rows="10" name="content"  required></textarea>
 					</div>
 				</li>
 				<li class="col-sm-4">
@@ -70,4 +70,3 @@
 </body>
 </html>
 
-  <!-- &id=<//?=$_GET['id']?>" -->

@@ -53,7 +53,7 @@
                                 <a href="ChangePostController.php?id=<?=$a['id']?>">редактировать</a> 
                             </td>
                             <td class="margin">                        
-                                <a href="admin.php?action=delete&id=<?=$a['id']?>">удалить</a>
+                                <a href="DeletePostController.php?id=<?=$a['id']?>">удалить</a>
                             </td>
                         </tr>
                         <?php endforeach ?> 
