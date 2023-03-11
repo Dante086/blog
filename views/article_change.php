@@ -16,21 +16,22 @@
 </head>
 <body>
 <div class="container">
-	<nav class="navbar navbar-light" style="background-color: rgb(126, 243, 16);">
-		<nav class="navbar navbar-expand-lg ">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><b>кулинарный блог</b></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			<h3>Кулинарный блог</h3>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-link active" aria-current="page" href="AdminPanelController.php">Админ.панель</a>
-				</div>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="../index.php">На главную</a>
+				</li>
+				
+			</ul>
 			</div>
 		</div>
 		</nav>
-	</nav>
 
 	<div class="container">
 		<h3>редактирование или добавление статей</h3>
@@ -41,7 +42,7 @@
 				<li class="col-sm-4">
 					<label>	название </label>  
 					
-							<input type="text" name="title" value="<?= $post['title']?>">  <!--написать в value ссылку на конкретную статью для редактирования	-->	
+							<input type="text" name="title" size="55" value="<?= $post['title']?>"> 
 						</li>
 						<li class="col-sm-4">
 							<label>	дата </label>
@@ -50,14 +51,16 @@
 						<li class="col-sm-4">
 							<label>	содержимоe </label>
 							<div >
-							<textarea name="content"  required><?= $post['content']   ?></textarea>
+							<textarea name="content" cols="120" rows="10"  required><?= $post['content']   ?></textarea>
 							</div>
 						</li>
 						<li class="col-sm-4">
-							<input type="submit" name="отправить" >
-					
-					
-				</li>
+							<label >изображение</label>
+							<input type="text" name="img" size="55" value="<?= $post['img']?>">				
+						</li>
+						<li class="col-sm-4">
+							<input type="submit" name="отправить" >				
+						</li>
 			</ul>
 		</form>
 		<br>

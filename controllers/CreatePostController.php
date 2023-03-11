@@ -8,7 +8,8 @@ if(!empty($_POST)){
     $title = trim($_POST['title']);
     $date = trim($_POST['date']);
     $content = trim($_POST['content']);
-    create_post($connect_db, $title, $date, $content);
+    $img = trim($_POST['img']);
+    create_post($connect_db, $title, $date, $content, $img);
 }
 
 include('../views/article_admin.php');
