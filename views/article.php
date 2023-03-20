@@ -12,44 +12,21 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-	<div class="container">
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid">
-			<h3>Кулинарный блог</h3>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="../index.php">На главную</a>
-				</li>
-				
-			</ul>
-			</div>
+	<div >	
+		<button class="but"><a class="nav-link active" aria-current="page" href="../index.php">На главную</a></button>		
+	</div>
+		
+		
+		<div class="box-text">					
+				<img src="<?=$one_post['img']?>" alt="photo">
+				<h3><?=$one_post['title']?></h3>
+				<em>опубликовано: <?=$one_post['date']?></em>
+				<p><?=$one_post['content']?></p>
 		</div>
-		</nav>
-	<!--<div class="container">
-		<div class="navbar">
-			<h3>Кулинарный блог</h3>
-
-			<ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.php">На главную</a>
-        </li>
-			</ul>	
-		</div>	-->		
-			<div class="post-one">
-				<div class="article">
-					<h3><?=$one_post['title']?></h3>
-					<em>опубликовано: <?=$one_post['date']?></em>
-					<p><?=$one_post['content']?></p>
-				</div>
-			</div>
-			<br>
-			<footer class="footer" >
-				<p>кулинарный блог<br>Copyright &copy; 2022</p>
-			</footer>
+		<br>
+		<footer>
+			<p>кулинарный блог<br>Copyright &copy; 2022</p>
+		</footer>
 	</div>
 </body>
 </html>
